@@ -1140,9 +1140,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1656,3 +1659,73 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+/********************************************************************/
+
+.skill-title{
+	margin-bottom: 3px;
+}
+
+.skill-detail{
+	font-size: 13px;
+	margin-left: 24px;
+	margin-bottom: 10px;
+}
+
+.certifications{
+	margin-left: 30px;
+}
+
+.certifications>h4{
+	margin-bottom:3px;
+}
+
+.certifications>ul>li{
+	font-size:13px;
+}
+
+.other-certs{
+	margin-top: 10px;
+	margin-left: 0px;
+}
+
+.work-exp-container{
+	width: 100%;
+	display: flexbox;
+}
+
+.work-exp{
+	width: 100%;
+	line-height: -50px;
+	padding-left: 10px;
+	border-left: 2px solid white;
+	/*margin-bottom: 20px;*/
+}
+
+.work-exp-space{
+	height: 25px;
+	width: 10px;
+	border-left: 2px dotted white;
+}
+
+.role-time{
+	display: flex;
+	width:100%;
+	justify-content: space-between;
+}
+
+.time{
+	font-size: 11px;
+	margin-bottom: 6px;
+}
+
+.role{
+	line-height: 16px;
+	margin-bottom: 15px;
+}
+
+.company{
+	font-weight: 400;
+}
+
+
