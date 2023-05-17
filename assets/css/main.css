@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+@import url('https://fonts.googleapis.com/css2?family=Smokum&display=swap');
 
 /*
 	Dimension by HTML5 UP
@@ -1001,7 +1002,6 @@ input, select, textarea {
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
-	button,
 	.button {
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -1689,6 +1689,8 @@ input, select, textarea {
 	margin-left: 0px;
 }
 
+/**********************/
+
 .work-exp-container{
 	width: 100%;
 	display: flexbox;
@@ -1699,7 +1701,6 @@ input, select, textarea {
 	line-height: -50px;
 	padding-left: 10px;
 	border-left: 2px solid white;
-	/*margin-bottom: 20px;*/
 }
 
 .work-exp-space{
@@ -1726,6 +1727,84 @@ input, select, textarea {
 
 .company{
 	font-weight: 400;
+}
+
+/**********************/
+
+.project-carousel-img{
+	display: flex;
+}
+
+.projects-div .image.main {
+	z-index: 0;
+	display: flex;
+}
+
+.carousel-buttons{
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+@keyframes right-button-hvr {
+	0% {
+	  transform: translateX(0px);
+	}
+	25%{
+		transform: translateX(2px);
+	}
+	50%{
+		transform: translateX(4px);
+	}
+	75%{
+		transform: translateX(2px);
+	}
+	100% {
+	  transform: translateX(0px);
+	}
+  }
+
+  @keyframes left-button-hvr {
+	0% {
+	  transform: translateX(0px);
+	}
+	25%{
+		transform: translateX(-2px);
+	}
+	50%{
+		transform: translateX(-4px);
+	}
+	75%{
+		transform: translateX(-2px);
+	}
+	100% {
+	  transform: translateX(0px);
+	}
+  }
+
+#left-scroll-btn, #right-scroll-btn{
+	padding: 15% 15px;
+	background-color: transparent;
+	border: none;
+	color: white;
+	font-family: 'Smokum', cursive;
+	font-size: 40px;
+	display: flex;
+}
+
+#left-scroll-btn:hover, #right-scroll-btn:hover{
+	cursor: pointer;
+}
+
+#right-scroll-btn:hover{
+	animation: right-button-hvr 0.9s ease-in-out infinite;
+}
+
+#left-scroll-btn:hover{
+	animation: left-button-hvr 0.9s ease-in-out infinite;
 }
 
 

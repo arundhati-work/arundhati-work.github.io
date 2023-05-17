@@ -30,9 +30,9 @@
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#intro">Skills</a></li>
+								<li><a href="#skills">Skills</a></li>
 								<li><a href="#work">Work</a></li>
-								<li><a href="#about">About</a></li>
+								<li><a href="#projects">Projects</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
@@ -42,8 +42,8 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Intro -->
-							<article id="intro">
+						<!-- skills -->
+							<article id="skills">
 								<h2 class="major">Skills & Certifications</h2>
 								<!-- <span class="image main"><img src="images/pic01.jpg" alt="" /></span> -->
 								<h3 class="skill-title">1. Salesforce Development</h3>
@@ -87,7 +87,6 @@
 						<!-- Work -->
 							<article id="work">
 								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
 								<div class="work-exp-container">
 									<div class="work-exp">
 										<div class="role-time">
@@ -123,17 +122,31 @@
 								</div>
 							</article>
 
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+						<!-- projects -->
+							<article id="projects">
+
+								<h2 class="major">Projects</h2>
+								
+								<div class="projects-div">
+									<div class="image main project-carousel-img">
+										<img id="project-img" src="images/projects/pic01.jpg" alt="" />
+										<div class="carousel-buttons">
+											<button id="left-scroll-btn" onclick="leftScrollHandler()"><</button>
+											<button id="right-scroll-btn" onclick="rightScrollHandler()">></button>
+										</div>
+									</div>
+									<div class="project-carousel-text">
+										<h2 id="project-header">Project 1</h2>
+										<p id="project-details">Project 1 details</p>
+									</div>
+									<a id="project-link" href="http://www.google.com" target="_blank">View Project</a>
+								</div>
 							</article>
 
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
+								<form method="POST" action="https://formspree.io/arundhatib.work@gmail.com">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -154,10 +167,8 @@
 									</ul>
 								</form>
 								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/arundhati-bandopadhyaya-519162191/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/arundhati-work" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</article>
 
@@ -421,6 +432,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/projects.js"></script>
 
 	</body>
 </html>
