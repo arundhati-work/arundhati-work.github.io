@@ -1731,6 +1731,22 @@ input, select, textarea {
 
 /**********************/
 
+.hide{
+	display:none;
+}
+
+.coming-soon{
+	width: 100%;
+	text-align: center;
+	line-height: 70px;
+}
+
+.coming-soon h1{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+
 .project-carousel-img{
 	display: flex;
 }
