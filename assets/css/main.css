@@ -1689,6 +1689,11 @@ input, select, textarea {
 	margin-left: 0px;
 }
 
+.cert-id{
+	font-size: 10px;
+	color: #e1dddd;
+}
+
 /**********************/
 
 .work-exp-container{
