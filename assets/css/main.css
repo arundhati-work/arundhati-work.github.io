@@ -1736,8 +1736,9 @@ input, select, textarea {
 
 /**********************/
 
-.hide{
-	display:none;
+iframe{
+	width: inherit;
+	height: inherit;
 }
 
 .coming-soon{
@@ -1754,6 +1755,7 @@ input, select, textarea {
 
 .project-carousel-img{
 	display: flex;
+	height: 400px;
 }
 
 .projects-div .image.main {
@@ -1767,7 +1769,16 @@ input, select, textarea {
 	z-index: 1;
 	display: flex;
 	justify-content: space-between;
-	
+	align-items: center;
+	height: inherit;
+}
+
+.carousel-buttons button{
+	width: 100px;
+	height: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 @keyframes right-button-hvr {
