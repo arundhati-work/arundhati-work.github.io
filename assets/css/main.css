@@ -1739,28 +1739,20 @@ input, select, textarea {
 iframe{
 	width: inherit;
 	height: inherit;
-}
-
-.coming-soon{
-	width: 100%;
-	text-align: center;
-	line-height: 70px;
-}
-
-.coming-soon h1{
-	padding-top: 30px;
-	padding-bottom: 30px;
+	overflow: hidden;
 }
 
 
 .project-carousel-img{
 	display: flex;
 	height: 400px;
+	overflow: hidden;
 }
 
 .projects-div .image.main {
 	z-index: 0;
 	display: flex;
+	overflow: hidden;
 }
 
 .carousel-buttons{
