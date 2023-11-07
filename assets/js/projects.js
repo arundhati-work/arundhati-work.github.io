@@ -70,10 +70,10 @@ var projects = [
     },
     {
         id:3,
-        header: 'Project 3',
-        frame: 'images/projects/pic02.jpg',
-        details: 'Project 3 details',
-        link: 'https://www.github.io',
+        header: 'Little Lemon',
+        frame: 'https://arundhati-work.github.io/little-lemon/',
+        details: 'As part of my Meta Front-end Developer Professional Certification, I designed and developed "Little-Lemon," a React application for a fictional restaurant. This project includes a responsive landing page and a table reservation system, highlighting my skills in HTML, CSS, JavaScript, and React, as well as my expertise in form validation using Formik. "Little-Lemon" showcases my ability to create dynamic and user-friendly web applications and demonstrates my commitment to professional development in front-end web development.',
+        link: 'https://arundhati-work.github.io/little-lemon/',
     }
 ]
 
