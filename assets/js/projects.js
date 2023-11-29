@@ -57,6 +57,14 @@ var rightBtn = document.getElementById('right-scroll-btn');
 var projects = [
     {
         id:1,
+        header: 'Mozaic.co',
+        frame: 'https://arundhati-work.github.io/mozaic/',
+        details: '"Mozaic" is a fictitious real estate enterprise, designed to unite investors for business projects. The brand embodies a sleek and minimalistic theme, crafted to emphasize the importance of both brand image and project excellence. The project is rooted in HTML, CSS, JavaScript, React, and React-router-dom.',
+        link: 'https://arundhati-work.github.io/mozaic/',
+        feedback: "mailto:arundhatib.work@gmail.com?subject=Feedback on Mozaic"
+    },
+    {
+        id:2,
         header: 'Parsley',
         frame: 'https://arundhati-work.github.io/parsley/',
         details: '"Parsley" is a fictitious small business specializing in online furniture sales. The theme for the design is cozy, natural, and minimalistic, which was brought to life using HTML, CSS, JavaScript, React, and React-router-dom.',
@@ -64,7 +72,7 @@ var projects = [
         feedback: "mailto:arundhatib.work@gmail.com?subject=Feedback on Parsley"
     },
     {
-        id:2,
+        id:3,
         header: 'Little Lemon',
         frame: 'https://arundhati-work.github.io/little-lemon/',
         details: '"Little Lemon" is a fictitious restaurant whose website was built as part of the Meta Front-end Developer Professional Certification. The project includes a responsive landing page and a table reservation system, built using HTML, CSS, JavaScript, React and the Formik library (for form validation).',
@@ -72,7 +80,7 @@ var projects = [
         feedback: "mailto:arundhatib.work@gmail.com?subject=Feedback on Little Lemon"
     },
     {
-        id:3,
+        id:4,
         header: 'Flipcart (WORK IN PROGRESS)',
         frame: 'https://arundhati-work.github.io/flipcart/',
         details: '"Flipcart" is an e-commerce application, leveraging a stack of HTML, CSS, JavaScript, React, Redux, and react-router-dom. The idea is to build an online store, offering a diverse range of products, including furniture, electronics, clothing, and jewelry. This project is still a work in progress but you\'re free to look around and track my progress.',
