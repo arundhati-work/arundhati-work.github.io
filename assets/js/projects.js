@@ -79,16 +79,16 @@ var projects = [
         link: 'https://arundhati-work.github.io/little-lemon/',
         feedback: "mailto:arundhatib.work@gmail.com?subject=Feedback on Little Lemon"
     },
-    {
-        id:4,
-        header: 'Flipcart (WORK IN PROGRESS)',
-        frame: 'https://arundhati-work.github.io/flipcart/',
-        details: '"Flipcart" is an e-commerce application, leveraging a stack of HTML, CSS, JavaScript, React, Redux, and react-router-dom. The idea is to build an online store, offering a diverse range of products, including furniture, electronics, clothing, and jewelry. This project is still a work in progress but you\'re free to look around and track my progress.',
-        link: 'https://arundhati-work.github.io/flipcart/',
-        feedback: "mailto:arundhatib.work@gmail.com?subject=Feedback on Flipcart"
-    },
 ]
 
+// {
+//     id:4,
+//     header: 'Flipcart (WORK IN PROGRESS)',
+//     frame: 'https://arundhati-work.github.io/flipcart/',
+//     details: '"Flipcart" is an e-commerce application, leveraging a stack of HTML, CSS, JavaScript, React, Redux, and react-router-dom. The idea is to build an online store, offering a diverse range of products, including furniture, electronics, clothing, and jewelry. This project is still a work in progress but you\'re free to look around and track my progress.',
+//     link: 'https://arundhati-work.github.io/flipcart/',
+//     feedback: "mailto:arundhatib.work@gmail.com?subject=Feedback on Flipcart"
+// },
 
 function changeValues(){
     var project = projects.find((pro) => pro.id === counter);
