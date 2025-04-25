@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Judson:ital,wght@0,400;0,700;1,400&family=Just+Another+Hand&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #393737;
+}
+
+#screen{
+  position: relative;
+  z-index: 0;
+}

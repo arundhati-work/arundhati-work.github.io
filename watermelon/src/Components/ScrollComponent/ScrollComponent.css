@@ -1,0 +1,67 @@
+#fullpage-container{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url("../../assets/wm-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+}
+
+.pages-wrapper{
+    height: 100%;
+    transform: translateY(var(--page-offset));
+    transition: transform 700ms ease-in-out;
+}
+
+.page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-content{
+    height: 95%;
+    width: 90%;
+}
+
+.page-navigation{
+    position: fixed;
+    right: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.nav-dot{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    padding: 0;
+    transition: all 300ms ease;
+}
+
+.nav-dot:hover{
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.nav-dot.active{
+    background-color: white;
+    transform: scale(1.25);
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .page-content{
+        height: 95%;
+        width: 98%;
+    }
+}
