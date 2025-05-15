@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/watermelon/static/css/main.74d5c539.css",
-    "main.js": "/watermelon/static/js/main.dbebdaeb.js",
-    "static/media/soulscouts.png": "/watermelon/static/media/soulscouts.a3e17a5af01c64d1ed16.png",
-    "static/media/photo.png": "/watermelon/static/media/photo.c6ec4be95ebba37fed0c.png",
-    "static/media/hyperesume.png": "/watermelon/static/media/hyperesume.387ed7a86835ab9a6109.png",
-    "static/media/resume2.pdf": "/watermelon/static/media/resume2.fe3c0d04f7203297cafc.pdf",
-    "static/media/wm-bg.png": "/watermelon/static/media/wm-bg.37a0c7342f9a7098314a.png",
-    "index.html": "/watermelon/index.html",
-    "main.74d5c539.css.map": "/watermelon/static/css/main.74d5c539.css.map",
-    "main.dbebdaeb.js.map": "/watermelon/static/js/main.dbebdaeb.js.map"
+    "main.css": "/static/css/main.7a4f77b2.css",
+    "main.js": "/static/js/main.c0aa5a08.js",
+    "static/media/soulscouts.png": "/static/media/soulscouts.a3e17a5af01c64d1ed16.png",
+    "static/media/photo.png": "/static/media/photo.c6ec4be95ebba37fed0c.png",
+    "static/media/hyperesume.png": "/static/media/hyperesume.387ed7a86835ab9a6109.png",
+    "static/media/resume2.pdf": "/static/media/resume2.fe3c0d04f7203297cafc.pdf",
+    "static/media/wm-bg.png": "/static/media/wm-bg.37a0c7342f9a7098314a.png",
+    "index.html": "/index.html",
+    "main.7a4f77b2.css.map": "/static/css/main.7a4f77b2.css.map",
+    "main.c0aa5a08.js.map": "/static/js/main.c0aa5a08.js.map"
   },
   "entrypoints": [
-    "static/css/main.74d5c539.css",
-    "static/js/main.dbebdaeb.js"
+    "static/css/main.7a4f77b2.css",
+    "static/js/main.c0aa5a08.js"
   ]
 }
