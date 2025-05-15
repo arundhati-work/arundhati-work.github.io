@@ -6,27 +6,30 @@
 }
 
 .footer-container {
+    margin: 0 2.5vw;
     position: absolute;
     bottom: 0;
     left: 0;
-    background-image: url("../../assets/footer-bg.png");
+    background:  linear-gradient(rgba(12, 12, 12, 0.5), rgba(12, 12, 12, 1));
     background-repeat: no-repeat;
     background-size: cover; /* Change from 'cover' to 'contain' */
-    width: 100vw;
-    height: 80vh;
+    width: 95vw;
+    height: 50vh;
     background-position: bottom;
     display: flex;
     justify-content: center;
+    border-radius: 100px 100px 0 0;
 }
 
 .like-my-style{
     color: #FFF;
     font-family: "Josefin Sans";
-    font-size: 4rem;
+    font-size: 2rem;
+    padding-bottom: 2rem;
 }
 
 .footer-text-container{
-    padding-top: 10rem;
+    padding-top: 3rem;
     text-align: center;
 }
 

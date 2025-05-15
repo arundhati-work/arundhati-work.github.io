@@ -7,9 +7,9 @@ const Footer = () => {
         <div className="footer-wrapper">
             <div className="footer-container">
                 <div className="footer-text-container">
-                    <h2 className="like-my-style">Like my Style?</h2>
+                    <h2 className="like-my-style"></h2>
                     <div className="email-container">
-                        <div className="email-link"><a href="mailto:little.watermelon.dev@gmail.com">little.watermelon.dev@gmail.com</a></div>
+                        <div className="email-link"><a href="mailto:arundhatib.work@gmail.com">arundhatib.work@gmail.com</a></div>
                         <div className="email-icon-container">
                             <img src={mailIcon} alt="Email"/>
                         </div>
