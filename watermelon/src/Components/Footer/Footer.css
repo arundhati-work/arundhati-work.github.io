@@ -6,17 +6,19 @@
 }
 
 .footer-container {
+    margin: 0 2.5vw;
     position: absolute;
     bottom: 0;
     left: 0;
-    background-image: url("../../assets/footer-bg.png");
+    background: rgba(12, 12, 12, 0.7);
     background-repeat: no-repeat;
     background-size: cover; /* Change from 'cover' to 'contain' */
-    width: 100vw;
+    width: 95vw;
     height: 80vh;
     background-position: bottom;
     display: flex;
     justify-content: center;
+    border-radius: 100px 100px 0 0;
 }
 
 .like-my-style{
