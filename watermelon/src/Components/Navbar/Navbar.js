@@ -3,7 +3,7 @@ import './Navbar.css';
 import githubIcon from "../../assets/github-icon.png";
 import linkedInIcon from "../../assets/linkedin-icon.png";
 import logo from "../../assets/logo.png";
-import resume from "../../assets/resume.pdf";
+import resume from "../../assets/resume2.pdf";
 
 const Navbar = () => {
 
