@@ -14,7 +14,7 @@
     background-repeat: no-repeat;
     background-size: cover; /* Change from 'cover' to 'contain' */
     width: 95vw;
-    height: 80vh;
+    height: 50vh;
     background-position: bottom;
     display: flex;
     justify-content: center;
@@ -24,11 +24,12 @@
 .like-my-style{
     color: #FFF;
     font-family: "Josefin Sans";
-    font-size: 4rem;
+    font-size: 2rem;
+    padding-bottom: 2rem;
 }
 
 .footer-text-container{
-    padding-top: 10rem;
+    padding-top: 3rem;
     text-align: center;
 }
 
