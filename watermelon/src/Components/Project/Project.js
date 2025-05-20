@@ -8,6 +8,7 @@ const Project = ({data}) => {
             <div className="project-image">
                 <img src={data.image} alt={data.title}/>
             </div>
+            <div className="project-text-container">
             <div className="title-container">
                 <div className="name-github">
                     <a href={data.github} target="_blank"><div className="github-icon-container"><img src={GitHub} alt="GitHub" className="github-icon" /></div></a>
@@ -29,6 +30,8 @@ const Project = ({data}) => {
                     }
                 </div>
             </div>
+            </div>
+            
         </div>
     )
 }

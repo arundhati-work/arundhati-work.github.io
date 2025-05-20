@@ -11,3 +11,7 @@ body {
   position: relative;
   z-index: 0;
 }
+
+body, html {
+  overflow-x: hidden;
+}
