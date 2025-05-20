@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import './ScrollComponent.css';
 import Landing from '../Landing/Landing';
 import Project from '../Project/Project';
@@ -34,76 +34,37 @@ const ScrollComponent = () => {
         {'content': <Project data={projectData[1]}/>, index: 2},
         {'content': <Footer/>, index: 3},
     ];
-    const [currentPage, setCurrentPage] = useState(0);
-    const [isScrolling, setIsScrolling] = useState(false);
+
+    const ref = useRef(null);
+    const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
-        let scrollAccumulator = 0;
-        let touchStartY = 0;
-        const SCROLL_THRESHOLD = 100;
-        const TOUCH_THRESHOLD = 50;
-
-        const handleWheel = (e) => {
-            e.preventDefault();
-
-            if (isScrolling) return; 
-
-            scrollAccumulator += e.deltaY;
-
-            if (scrollAccumulator > SCROLL_THRESHOLD && currentPage < pages.length-1){
-                setIsScrolling(true);
-                setCurrentPage(prev => prev+1);
-                scrollAccumulator = 0;
-                setTimeout(() => setIsScrolling(false), 700);
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
             }
-            else if (scrollAccumulator < -SCROLL_THRESHOLD && currentPage > 0) {
-                setIsScrolling(true);
-                setCurrentPage(prev => prev-1);
-                scrollAccumulator = 0;
-                setTimeout(()=> setIsScrolling(false), 700);
-            }
-        }
-
-        const handleTouchStart = (e) => {
-            touchStartY = e.touches[0].clientY;
-        };
-
-        const handleTouchMove = (e) => {
-            if (isScrolling) return;
-
-            const touchCurrentY = e.touches[0].clientY;
-            const deltaY = touchStartY - touchCurrentY;
-
-            if (deltaY > TOUCH_THRESHOLD && currentPage < pages.length-1) {
-                setIsScrolling(true);
-                setCurrentPage(prev => prev+1);
-                setTimeout(() => setIsScrolling(false), 700);
-            } else if (deltaY < -TOUCH_THRESHOLD && currentPage > 0) {
-                setIsScrolling(true);
-                setCurrentPage(prev => prev-1);
-                setTimeout(() => setIsScrolling(false), 700);
-            }
-        };
-
-        const container = document.getElementById('fullpage-container');
-        container.addEventListener('wheel', handleWheel, {passive: false});
-        container.addEventListener('touchstart', handleTouchStart, {passive: true});
-        container.addEventListener('touchmove', handleTouchMove, {passive: true});
-
+          });
+        }, {
+          threshold: 0.1,
+        });
+    
+        const elements = document.querySelectorAll('.reveal');
+        elements.forEach(el => observer.observe(el));
+    
         return () => {
-            container.removeEventListener('wheel', handleWheel);
-            container.removeEventListener('touchstart', handleTouchStart);
-            container.removeEventListener('touchmove', handleTouchMove);
+          elements.forEach(el => observer.unobserve(el));
         };
-    }, [currentPage, pages.length, isScrolling]);
+      }, []);
+      
 
 
     return (
         <div id='fullpage-container'>
-            <div className="pages-wrapper" style={{"--page-offset": `${-currentPage * 100}%`}}>
+            <div className="pages-wrapper">
                 {
                     pages.map((page, index) => (
-                        <div key={index} className='page'>
+                        <div key={index} className='page reveal'>
                             <div className='page-content'>
                                 {page.content}
                             </div>
@@ -111,18 +72,6 @@ const ScrollComponent = () => {
                     ))
                 }
             </div>
-
-            <nav className='page-navigation'>
-                {
-                    pages.map((page, index) => (
-                        <button
-                            key={index}
-                            onClick={() => setCurrentPage(index)}
-                            className={`nav-dot ${currentPage === index? 'active' : ''}`}
-                        />
-                    ))
-                }
-            </nav>
         </div>
     )
 }
